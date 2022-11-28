@@ -14,7 +14,7 @@ const {
 export const apps = [
   {
     name: 'api-service',
-    script: './dist/app.js',
+    script: '/app/dist/main.js',
   },
 ];
 export const deploy = {
