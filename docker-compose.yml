@@ -40,7 +40,6 @@ services:
 
 volumes:
   volume:
-    external: true
 
 networks:
   kupipodariday-db: 
