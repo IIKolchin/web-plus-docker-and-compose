@@ -37,9 +37,9 @@ services:
       - kupipodariday-network
     restart: "unless-stopped"
 
-
 volumes:
   volume:
+    driver: local
 
 networks:
   kupipodariday-db: 
