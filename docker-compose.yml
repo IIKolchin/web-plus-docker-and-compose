@@ -32,10 +32,10 @@ services:
     container_name: kupipodariday-frontend
     build: ./frontend
     ports:
-      - 8081:80
+      - "8081:80"
     networks:
       - kupipodariday-network
-      - kupipodariday-db
+    restart: "unless-stopped"
 
 
 volumes:
@@ -44,5 +44,6 @@ volumes:
 networks:
   kupipodariday-db: 
     driver: bridge
+    internal: true
   kupipodariday-network:
     driver: bridge
